@@ -31,7 +31,7 @@ import com.crudfodassi.crm.repository.ClienteRepository;
 @RequestMapping("/clientes")
 @CrossOrigin
 public class ClienteController {
-
+//testando o oyama
 	@Autowired
 	private ClienteRepository clienteRepository;
 
