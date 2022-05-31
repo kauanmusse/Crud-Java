@@ -1,0 +1,27 @@
+body{
+    background-image: url(../jpeg/travel-clean-black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+    ;
+}
+.container{
+    color: white;
+}
+.h3{
+    text-align: center;
+}
+.inputBuscar{
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.botaoBuscar{
+    color: white;
+    width: 100px;
+    border: 2px solid rgb(109, 238, 109);
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgb(88, 90, 99);
+    margin-bottom: 5px;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <script src="../js/teste.js"></script>
+
+    <style>
+        body{
+            background-image: url(../jpeg/travel-clean-black.jpg);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+       
+        .hero{
+            display: inline;
+            float: left;
+            margin-left: 80px;
+            
+        }
+        .hero1{
+            display: inline;
+            float: left;
+            margin-left: 100px;
+        }
+        .hero2{
+            display: inline;
+            float: left;
+            margin-left: 100px;
+            
+        }
+        .sec1{
+        background-color: rgb(255, 255, 255);
+        height: 1000px;
+        border-radius: 20px;
+        padding-right: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 970px;
+        margin-top: 30px;
+    }
+   
+   
+
+    .inp1, .inp2, .inp3, .inp4, .inp5, .inp6, .put1, .put2, .put3, .iddel, .put4, .put5, .put6, .numput, .numinp, .id{ 
+       
+        border: 0;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .inp1, .inp2, .inp3, .inp4, .inp5, .inp6, .put1, .put2, .put3, .put4, .put5, .put6, .numput, .numinp, .id{
+        background-color: rgb(192, 194, 205) ;
+    }
+
+    .new, .new1, .new2{
+        font-size: 25px;
+        margin-left: 53px;
+    }
+    .bt1, .bt2, .bt3, .l1{
+        background-color: rgb(192, 194, 205) ;
+        width: 60px;
+        height: 30px;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 255, 255); 
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .bt1, .bt2, .bt3, .l1{
+        margin-left: 70px;
+    }
+    .name1, .name2, .name4, .ac1, .ac2, .ac4, .iddel{
+        margin-left: 80px;
+    }
+    .ac3{
+        margin-left: 60px;
+    }
+    .ac{
+        margin-left: 90px;
+    }
+    .name3{
+        margin-left:60px;
+    }
+    .put1, .put2{
+        margin-left: 40px;
+    }
+
+    .num, .numalt{
+        margin-left: 85px;
+    }
+    .info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9, .info10, .info11, .info12{
+        color: grey;
+        margin-left: 35px;
+        font-size: 12px;
+    }
+ 
+   .ver{
+       margin-top: 50px;
+       font-size: 20px;
+   }
+    </style>
+   
+<body>
+    <div>
+       
+        <main>
+            <section class="sec1">
+                <div>
+                
+                    <div class="hero">
+                    <p class="new">Adicionar:</p>
+                   
+                        <p class="name1" id="texto1">Nome: </p>
+                        <p class="info1">*Informação Obrigatoria*</p>
+                        <input id="inp1" class="inp1" type="text">
+                        <p class="name2" >Idade:</p>
+                        <p class="info2">*Informação Obrigatoria*</p>
+                        <input id="inp2" class="inp2" type="text">
+                        <p class="name3" >Data de Hoje: </p>
+                        <p class="info3">*Informação Obrigatoria*</p>
+                        <input id="put1" class="put1" type="date">
+                        <p class="name4">Email: </p>
+                        <p class="info4">*Informação Obrigatoria*</p>
+                        <input id="put4" class="put4" type="email">
+                        <p class="num"> Tel:</p>
+                        <p class="info5">*Informação Obrigatoria*</p>
+                        <input id="num1" class="numput" type="text">
+                        <br>
+                        <button type="button" onclick="enviar()" class="bt1">Add</button>
+                    
+                    </div>
+
+                    <div class="hero1">
+                    <p class="new1">Alterar:</p>
+                    
+                        <p class="ac">Id: </p>
+                        <p class="info6">*Informação Obrigatoria*</p>
+                        <input id="id" class="id" type="text">
+                        <p class="ac1" id="texto2">Nome: </p>
+                        <p class="info7">*Informação Obrigatoria*</p>
+                        <input id="inp3" class="inp3" type="text">
+                        <p class="ac2" >Idade: </p>
+                        <p class="info8">*Informação Obrigatoria*</p>
+                        <input id="inp4" class="inp4" type="text">
+                        <p class="ac3">Data de Hoje: </p>
+                        <p class="info9">*Informação Obrigatoria*</p>
+                        <input id="put2" class="put2" type="date">
+                        <p class="ac4">Email: </p>
+                        <p class="info10">*Informação Obrigatoria*</p>
+                        <input id="put5" class="put5" type="email">
+                        <p class="numalt"> Tel:</p>
+                        <p class="info11">*Informação Obrigatoria*</p>
+                        <input id="num2" class="numinp" type="text">
+                        <br>
+                        <button type="button" onclick="envio()" class="bt2">Alterar</button>
+                   
+                    </div>
+
+                    <div class="hero2">
+                        <p class="new2">Deletar:</p>
+                        <p class="iddel" id="texto1">Id: </p>
+                        <p class="info12">*Informação Obrigatoria*</p>
+                        <input id="inp5" class="inp5" type="text">
+                        <br>
+                        <button type="button" onclick="deletar()" class="bt3">Delete</button>
+                        <br>
+                        <p class="ver">Deseja ver a lista de clientes?</p>
+                        <a href="./Lista.html" target="_blank"><button class="l1">Lista</button></a>
+                    </ul>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
